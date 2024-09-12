@@ -5,8 +5,8 @@ for i in range(len(numbers)):
     if numbers[i] == 1:
         continue
     is_prime = True
-    for j in primes:
-        if numbers[i] % j == 0:
+    for j in range(len(primes)):
+        if numbers[i] % primes[j] == 0:
             is_prime = False
     if is_prime:
         primes.append(numbers[i])
